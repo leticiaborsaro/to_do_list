@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.lista {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 100px 300px 100px 300px ;
+}
+
+
+.tarefa {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+header { 
+    background-color: grey;
+    padding: 50px;
+}
+
+footer {
+    background-color: grey;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
