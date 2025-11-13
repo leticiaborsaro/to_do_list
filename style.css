@@ -1,32 +1,49 @@
-body {
+* {
     margin: 0;
+    /* height: 100%; */
 }
 
 .lista {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 100px 300px 100px 300px ;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column; /* de cima para baixo verticalmente */
+    flex-wrap: nowrap; /* não move quando redimenciona */
+    justify-content: center;
+    gap: 3px;
+    border: 10px solid brown;
+    position: relative;
+    padding: 20px;
+
 }
 
+/* #to_do {
+    align-items: end;
+}  this didn't work */
 
 .tarefa {
     display: flex;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
     align-items: center;
     border-radius: 50px;
-    padding: 5px;
+    padding: 10px;
+    width:fit-content;
+    justify-content: space-around;
 }
 
+.tarefa-itens {
+    margin: 0px 10px 0px 10px;
+}
+/*
 header { 
     background-color: grey;
     padding: 50px;
 }
 
 footer {
+   /* margin-top: auto; 
     background-color: grey;
     padding: 25px;
     text-align: center;
     color: white;
-}
+} 
