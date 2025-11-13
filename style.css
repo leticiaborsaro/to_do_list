@@ -1,6 +1,15 @@
 * {
     margin: 0;
-    /* height: 100%; */
+}
+
+body section {
+    display: inline-flex
+}
+.projetos {
+    padding: 10px;
+    border: 1px solid salmon;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .lista {
@@ -10,7 +19,7 @@
     flex-wrap: nowrap; /* não move quando redimenciona */
     justify-content: center;
     gap: 3px;
-    border: 10px solid brown;
+    border: 1px solid brown;
     position: relative;
     padding: 20px;
 
@@ -23,7 +32,7 @@
 .tarefa {
     display: flex;
     background-color: rgb(255, 255, 255);
-    border: 5px solid black;
+    border: 1px solid grey;
     align-items: center;
     border-radius: 50px;
     padding: 10px;
@@ -34,16 +43,24 @@
 .tarefa-itens {
     margin: 0px 10px 0px 10px;
 }
-/*
+
 header { 
     background-color: grey;
     padding: 50px;
+    display: block;
 }
 
 footer {
-   /* margin-top: auto; 
+    display: block;
+    margin-top: auto; 
     background-color: grey;
     padding: 25px;
     text-align: center;
     color: white;
 } 
+
+button.tarefa-itens {
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
