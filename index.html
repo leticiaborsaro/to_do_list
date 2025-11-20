@@ -8,43 +8,143 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+   
+    <div class="container-principal">
+        <!-- BARRA LATERAL DE PROJETOS -->
+         <aside class="barra-lateral">
+            <h1> Projetos </h1>
 
-    </header>
+            <!-- Formulário Novo Projeto -->
+            <form id="novo-proj-form" class="novo-proj-form">
+                <div class="forms">
+                    <input type="text" id="nome-projeto" placeholder="Nome do novo projeto" class="input-form" required>
+                </div>
+                <div class="forms form-cores">
+                    <label for="project-cor-input">Cor:</label>
+                    <input type="color" id="project-color-input" value="#3b82f6" class="form-cor-input">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Adicionar
+                </button>
+            </form>
+            
+            <!-- Lista de Projetos -->
+            <nav id="projeto-lista" class="projeto-lista">
+                <!-- "Todas as Tarefas" como item fixo -->
+                <div class="projeto-item-wrapper">
+                    <a href="#" class="projeto-item active" data-project-id="all">
+                        Todas as Tarefas
+                    </a>
+                    <!-- Botão de apagar (invisível) -->
+                </div>
+                <!-- Projetos dinâmicos serão inseridos aqui -->
+            </nav>
+         </aside>
 
-    <section class="projetos"> 
-        <h1>Projetos</h1>
-        <form>
-            <input type="text">
-            <button>Criar novo</button>
-        </form>
-    </section>
+         <!-- CONTEÚDO PRINCIPAL (TAREFAS) -->
+          <main class="conteudo-principal">
+            <div class="conteudo-main-dentro">
+                <!-- HEADER LISTA DE TAREFAS-->
+                 <div class="header-tarefas">
+                    <h1 id="tarefa-lista-titulo" class="tarefa-lista-titulo">Todas as Tarefas</h1>
+                    <button id="del-tarefa-feita" class="del-tarefa-btn" title="Remover tarefas feitas">
+                        <!-- MUDAR BOTAO -->
+                        <svg class="icon-medium" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0l.346-9m3.54 0l-1.096-1.096a.75.75 0 00-1.06 0L12 7.904l-1.096-.096a.75.75 0 00-1.06 0l-1.096 1.096M14.74 9H9.26M18.75 9H5.25c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h13.5c.414 0 .75.336.75.75s-.336.75-.75.75zM12 1.5c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zM12 3a7.5 7.5 0 100 15 7.5 7.5 0 000-15z" />
+                        </svg>
+                    </button>
+                 </div>
+
+                 <!-- LISTA DE TAREFAS-->
+                  <div id="lista-tarefas" class="lista-tarefas">
+                    <!-- TAREFAS INSERIDAS DEPOIS-->
+                  </div>
+            </div>
+          </main>
+    </div>
     
-
-    <section class="lista"> <!-- lista de tarefas -->
-        <h1 id="to_do"> To-Do List </h1> <!-- Nome Lista -->
-
-        <!-- cada div é uma tarefa diferente..será que n dá pra fazer com lista normal? -->
-        <div class="tarefa"> <!-- classe CSS dependendo da cor escolhida -->
-            <button class="tarefa-itens"> </button> <!-- botão marcar feito -->
-            <p class="tarefa-itens"> Criar estrutura HTML da lista de tarefas </p> <!-- Escrito da tarefa -->
-            <div> <!-- tags da tarefa -->
-                <span class="tarefa-itens" style="background-color: yellow;"> Fazendo </span>
-                <span class="tarefa-itens" style= > Projeto Web </span>
+        <!-- ==== BOTÃO FLUTUANTE (+) (ADICIONADO DE VOLTA) ==== -->
+        <button id="abrir-modal-tarefa" class="btn-flutuante">
+            <svg class="icon-large" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+        </button>
+    
+        <!-- ==== MODAL NOVA TAREFA ==== -->
+        <div id="modal-nova-tarefa" class="modal-overlay modal-hidden">
+            <div class="modal-conteudo">
+                <h2>Adicionar Nova Tarefa</h2>
+                <form id="form-nova-tarefa">
+                    <div class="forms">
+                        <input type="text" id="nome-tarefa" placeholder="Nome da nova tarefa" class="input-form" required>
+                    </div>
+                    
+                    <div id="modal-grid-form" class="modal-grid-form">
+                        <div id="wrapper-select-projeto" class="forms">
+                            <label for="select-projeto">Projeto</label>
+                            <select id="select-projeto" class="select-form">
+                                <!-- Opções de projeto -->
+                            </select>
+                        </div>
+                        
+                        <div class="forms">
+                            <label for="select-status">Status</label>
+                            <select id="select-status" class="select-form">
+                                <option value="todo">A fazer</option>
+                                <option value="doing">Fazendo</option>
+                                <option value="done">Feito</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-acoes">
+                        <button type="button" id="fechar-modal-tarefa" class="btn btn-secondary">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            Adicionar
+                        </button>
+                    </div>
+                </form>
             </div>
-        </div> 
-
-        <div class="tarefa"> <!-- classe CSS dependendo da cor escolhida -->
-            <button class="tarefa-itens"> </button> <!-- botão marcar feito -->
-            <p class="tarefa-itens"> Criar estrutura HTML da lista de tarefas </p> <!-- Escrito da tarefa -->
-            <div> <!-- tags da tarefa -->
-                <span class="tarefa-itens" style="background-color: yellow;"> Fazendo </span>
-                <span class="tarefa-itens" style= > Projeto Web </span>
+        </div>
+    
+        <!-- ==== MODAL CONFIRMAR EXCLUSÃO (GERAL) ==== -->
+        <div id="modal-confirmar-del" class="modal-overlay modal-hidden">
+            <div class="modal-conteudo">
+                <h2 class="danger">Confirmar Exclusão</h2>
+                <p id="msg-confirmar-del">
+                    <!-- Mensagem via JS -->
+                </p>
+                <div class="modal-acoes">
+                    <button type="button" id="cancelar-del-btn" class="btn btn-secondary">
+                        Cancelar
+                    </button>
+                    <button type="button" id="confirmar-del-btn" class="btn btn-danger">
+                        Sim, Apagar Tudo
+                    </button>
+                </div>
             </div>
-        </div> 
-
-    </section>
-
+        </div>
+    
+        <!-- ==== MODAL CONFIRMAR EXCLUSÃO (PROJETO) ==== -->
+        <div id="modal-confirmar-del-proj" class="modal-overlay modal-hidden">
+            <div class="modal-conteudo">
+                <h2 class="danger">Apagar Projeto?</h2>
+                <p id="msg-confirmar-del-proj">
+                    <!-- Mensagem via JS -->
+                </p>
+                <div class="modal-acoes">
+                    <button type="button" id="cancelar-del-proj-btn" class="btn btn-secondary">
+                        Cancelar
+                    </button>
+                    <button type="button" id="confirmar-del-proj-btn" class="btn btn-danger">
+                        Sim, Apagar Projeto
+                    </button>
+                </div>
+            </div>
+        </div>
+        
     <footer> 
         <p> Made by Letícia Borsaro - 2025 </p>
     </footer>
