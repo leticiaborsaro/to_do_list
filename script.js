@@ -146,6 +146,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 option.textContent = project.name;
                 elements.taskProjectSelect.appendChild(option);
             });
+
+            if (state.projects.length > 0) {
+                elements.taskProjectSelect.classList.remove('input-erro');
+            }
         },
         updateActiveStyles() {
             elements.projectList.querySelectorAll('a.projeto-item').forEach(a => {
