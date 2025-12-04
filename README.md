@@ -31,6 +31,7 @@ Linguagens, frameworks e ferramentas utilizadas:
 * **Back-end:** JavaScript
 * **Prototipagem:** Figma
 * **Versionamento:** Git e GitHub
+* **Inteligências Artificiais:** Gemini (Modo Canvas) e DeepSeek
 
 ## Futuras Atualizações
 * **Armazenamento:** localStorage com JavaScript, e depois, uso de Banco de Dados
