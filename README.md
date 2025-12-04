@@ -8,13 +8,14 @@ Projeto final de Programação Web
 > **Resumo:** Maior eficiência na organização visual para desenvolvimento de projetos
 
 ## Objetivo
-Tendo em vista as necessidades de um usuário que se beneficia de elementos visuais para se organizar e aprender, esse projeto pretende facilitar a organização de tarefas ao dividi-las através de cores, indicando a qual projeto ela pertence e o seu status de execução. Além disso, é possível visualizar tanto a lista completa quanto as tareas pertencentes a um projeto específico. 
+Esse projeto pretende facilitar a categorização de tarefas e o manejo de projetos através de uma estética minimalista porém colorida, empregando cores como forma de diferenciar tarefas pertencentes a projetos distintos. Também utiliza a metodologia ágil Kanban para auxiliar na administração das tarefas e emprega visualizações distintas para cada projeto, visando melhorar a experiência do usuário.
+
 * **Meta principal:** Criar uma aplicação web que cria projetos, permite escolher a cor do projeto e então cria uma lista de tarefas organizada e colorida.
 
 ## Justificativa
 *Por que esse projeto é relevante?*
 
-Assim como existem pessoas que aprendem melhor de forma visual – através de cores, representações e figuras –, a organização de uma lista de tarefas que envolve diversos projetos e responsabilidades do usuário pode ser facilitada ao identificar visualmente a qual projeto uma determinada tarefa faz parte, além do seu status de execução atual estilo Kanban. 
+Organização eficaz é essencial para o desenvolvimento de projetos. Tendo em vista as necessidades de um usuário que se beneficia de elementos visuais para aprender (*visual learners*, em inglês), as tarefas são classificadas por cores, indicando a qual projeto ela pertence e o seu status de execução. Além disso, é possível visualizar tanto a lista completa quanto as tareas pertencentes a um projeto específico, facilitando o entendimento para o usuário. 
 
 ## Público-Alvo
 *Para quem o projeto está sendo desenvolvido?*
