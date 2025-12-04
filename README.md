@@ -29,7 +29,7 @@ Lista das principais funções do sistema:
 Linguagens, frameworks e ferramentas utilizadas:
 * **Front-end:** HTML5, CSS3
 * **Back-end:** JavaScript
-* **Prototipagem:** Figma
+* **Design:** Figma
 * **Versionamento:** Git e GitHub
 * **Inteligências Artificiais:** Gemini (Modo Canvas) e DeepSeek
 
