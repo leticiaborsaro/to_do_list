@@ -1,6 +1,8 @@
 # Lista de Tarefas - Projetos e Cores
 Projeto final de Programação Web
 
+**Link GitHub Pages:** https://leticiaborsaro.github.io/to_do_list/ 
+
 ![Status](https://img.shields.io/badge/status-em_desenvolvimento-yellow)
 
 > **Resumo:** Maior eficiência na organização visual para desenvolvimento de projetos
