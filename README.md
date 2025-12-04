@@ -11,10 +11,12 @@ Tendo em vista as necessidades de um usuário que se beneficia de elementos visu
 
 ## Justificativa
 *Por que esse projeto é relevante?*
-Assimc como existem pessoas que aprendem melhor de forma visual – através de cores, representações e figuras –, a organização de uma lista de tarefas que envolve diversos projetos e responsabilidades do usuário pode ser facilitada ao identificar visualmente a qual projeto uma determinada tarefa faz parte, além do seu status de execução atual estilo Kanban. 
+
+Assim como existem pessoas que aprendem melhor de forma visual – através de cores, representações e figuras –, a organização de uma lista de tarefas que envolve diversos projetos e responsabilidades do usuário pode ser facilitada ao identificar visualmente a qual projeto uma determinada tarefa faz parte, além do seu status de execução atual estilo Kanban. 
 
 ## Público-Alvo
 *Para quem o projeto está sendo desenvolvido?*
+
 Pessoas visuais que desejam uma lista de tarefas simples, colorida e eficiente.
 
 ## Funcionalidades
