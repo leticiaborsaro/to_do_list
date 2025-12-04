@@ -25,7 +25,7 @@ Lista das principais funções do sistema:
 - [ ] CRUD de Tarefas (Criar, Ler, Atualizar, Deletar)
 - [ ] Visualização Total e Parcial (Lista Cheia & Visão de Projeto)
 
-## 🛠 Tecnologias
+## Tecnologias
 Linguagens, frameworks e ferramentas utilizadas:
 * **Front-end:** HTML5, CSS3
 * **Back-end:** JavaScript
