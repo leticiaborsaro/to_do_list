@@ -50,5 +50,6 @@ Linguagens, frameworks e ferramentas utilizadas:
 * **Kanban:** visualizar todas as tarefas de um status (A fazer, Fazendo, Feito)
 * **Projetos:** mais configurações e visualização mais detalhada
 * **Tarefas:** adição de cores avulsas e mais informações
+* **Organização:** mais opções para decidir quem aparece no topo da lista (primeiro pelo Kanban, e depois ordenações personalizadas)
 * **Dark Mode:** para a alegria de muitos!
 ---
