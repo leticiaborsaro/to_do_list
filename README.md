@@ -21,9 +21,9 @@ Pessoas visuais que desejam uma lista de tarefas simples, colorida e eficiente.
 
 ## Funcionalidades
 Lista das principais funções do sistema:
-- [ ] Criar e Deletar Projetos
-- [ ] CRUD de Tarefas (Criar, Ler, Atualizar, Deletar)
-- [ ] Visualização Total e Parcial (Lista Cheia & Visão de Projeto)
+- [x] Criar e Deletar Projetos
+- [x] CRUD de Tarefas (Criar, Ler, Atualizar, Deletar)
+- [x] Visualização Total e Parcial (Lista Cheia & Visão de Projeto)
 
 ## Tecnologias
 Linguagens, frameworks e ferramentas utilizadas:
